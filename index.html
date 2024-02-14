@@ -8,8 +8,32 @@
 </head>
 <body>
     <div class="container">
-        <div class="board"></div>
+            
+            <div class="main-board">
+                <div class="score">
+                    <h3>Score</h3>
+                    <div> Top Score - <span id="scoreVal"></span></div>
+                    <p> Current Score - <span id="totalScore"></span></p>
+                </div>
+                <div class="board" id="board"></div>
+                <div class="controls">
+                    <div class="top-controls">
+                        <button id="upBtn">Move Up</button>
+                    </div>
+                    <div class="center-controls">
+                        <button id="leftBtn">Move Left</button>
+                        <button id="rightBtn">Move Right</button>
+                    </div>
+                    <div class="bottom-controls">
+                        <button id="downBtn">Move Down</button>
+                    </div>
+                </div>
+            </div>
+           
+            
+        </div>
     </div>
+    
 </body>
 <script src="js/main.js"></script>
 </html>

@@ -2,13 +2,55 @@
     padding: 0px;
     margin: 0px;
 }
-
-.board {
-    background-color: rgb(239, 191, 70);
+.main-board {
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 400px;
-    height: 400px;
+    transform: translateX(-50%);
+    border: 2px solid #a23c06;
+    
+}
+#board{
+    background-color: #dbbe73;
+    width: 60vmin;
+    height: 62vmin;
+    display: grid;
+    grid-template-rows:    repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+.score{
+    border: 2px solid #5d2507;
+    padding: 10px;
+    display: block;
+    text-align: left;
+}
+.score > div{
+    font-weight: bold;
+    color: #801f07;
+}
+.score > p{
+    font-weight: bold;
+    color: #265f1e;
+}
+
+.head{ background-color: #5d2507; border-radius: 10px; border: 2px solid #dbbe73; transform:scale(1.2);}
+.snake{ background-color: #a23c06; border-radius: 10px; border: 2px solid #dbbe73;}
+.food{ background-color: #a23c06; border-radius: 10px; border: 3px solid #dbbe73;}
+
+.controls{
+    border: 2px solid #5d2507;
+    display: block;
+    padding: 10px;
+}
+.controls button {
+    padding: 5px 10px;
+    background-color: bisque;
+    border-radius: 10px;
+}
+.center-controls{
+    display: flex;
+    justify-content: space-around;
+}
+.top-controls, .bottom-controls{
+    display: flex;
+    justify-content: space-around;
 }
