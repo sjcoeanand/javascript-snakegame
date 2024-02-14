@@ -1,5 +1,5 @@
 let inputDir = {x: 0, y: 0}
-let speed = 12;
+let speed = 11;
 let lastPaintTime = 0;
 let snakeArray = [
     {x: 3, y:2}
