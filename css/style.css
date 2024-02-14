@@ -7,7 +7,6 @@
     left: 50%;
     transform: translateX(-50%);
     border: 2px solid #a23c06;
-    
 }
 #board{
     background-color: #dbbe73;
@@ -54,3 +53,27 @@
     display: flex;
     justify-content: space-around;
 }
+
+@media (min-width: 324px) {
+    #board { 
+        width: 100%;
+        grid-template-rows:    repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+     }
+     .head, .snake, .food{
+        border-radius: 5px;
+        border: 0;
+     }
+    .main-board {
+        /* position: absolute; */
+        left: 0;
+        width: 100%;
+        transform: none;
+        border: none
+    }
+    .controls button {
+        padding:10px;
+        background-color: bisque;
+        border-radius: 10px;
+    }
+  }
