@@ -54,7 +54,7 @@
     justify-content: space-around;
 }
 
-@media (min-width: 324px) {
+@media (max-device-width: 480px) {
     #board { 
         width: 100%;
         grid-template-rows:    repeat(18, 1fr);
@@ -65,7 +65,6 @@
         border: 0;
      }
     .main-board {
-        /* position: absolute; */
         left: 0;
         width: 100%;
         transform: none;
